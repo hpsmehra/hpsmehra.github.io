@@ -1,0 +1,139 @@
+﻿
+        .navbar-default .navbar-nav > li > a {
+            color: blue;
+        }
+
+        label, .company_address p {
+            font-size: inherit !important;
+        }
+
+        .project-item-inner {
+            height: 0;
+        }
+
+        .modal-footer {
+            border-top: 0px solid #e5e5e5;
+        }
+
+        .popup-link {
+            height: 97.2%;
+        }
+
+        .project-desc .title > a {
+            color: #337ab7;
+            text-decoration: none;
+            font-weight: 900;
+        }
+      
+   
+        .navbar-default .navbar-nav > li > a {
+            color: blue;
+        }
+
+        label, .company_address p {
+            font-size: inherit !important;
+        }
+
+        .project-item-inner {
+            height: 0;
+        }
+
+        .modal-footer {
+            border-top: 0px solid #e5e5e5;
+        }
+
+        .popup-link {
+            height: 97.2%;
+        }
+
+        .project-desc .title > a {
+            color: #337ab7;
+            text-decoration: none;
+            font-weight: 900;
+        }
+      
+     .navbar-default .navbar-nav>li>a {
+    color: blue;
+}
+        label, .company_address p {
+            font-size: inherit !important;
+        }
+
+
+      
+        .mySlides {
+            display: none;
+            
+        }
+
+        /*ul li a {
+            color: blue !important;
+            font-weight: bolder;
+            font-style:inherit;
+        }*/
+
+        /*.btn-default {
+            color: black !important;
+            
+            background-color: white !important;
+            border-color: transparent;
+            padding: 0px 13px 2px 15px;
+        }*/
+
+        a:focus, a:hover {
+            color: #23527c;
+            text-decoration: underline;
+        }
+
+        #back-top {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            z-index: 99;
+            display: none;
+        }
+
+            #back-top a {
+                width: 44px;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                -webkit-transition: 0.2s;
+                transition: 0.2s;
+            }
+
+                #back-top a .fa {
+                    width: 44px;
+                    height: 44px;
+                    line-height: 44px;
+                    display: block;
+                    font-size: 14px;
+                    background: #a3a3a3;
+                    border-radius: 6px;
+                }
+
+                #back-top a:hover {
+                    color: #2f2f2f;
+                }
+
+                    #back-top a:hover .fa {
+                        background-color: #777;
+                    }
+
+        .box-top a {
+            color: blue !important;
+            background: lightgrey;
+        }
+
+.nav > li > a:focus, .nav > li > a:hover {
+        background-color: rgba(128, 128, 128, 0);
+}
+
+ .imgborder a img {
+        
+            max-width: 25%;
+    border-style: ridge;
+    border-color: grey;
+    border-width: 1px;
+        }
