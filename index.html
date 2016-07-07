@@ -2,156 +2,189 @@
 <html lang="en">
 
 <head>
-    <style>
-        a:focus, a:hover {
-            color: #23527c;
-            text-decoration: none;
-        }
-    </style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-
-
     <title>hpsmehra</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <a href="favicon.ico"></a>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Custom CSS -->
+    <script src="js/jquery.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/landing-page.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/theme.css" rel="stylesheet" />
     <script src="js/Wow.js"></script>
+    <script src="js/backtotop.js"></script>
+
+    <link href="css/Applied.css" rel="stylesheet" />
+    <style>
+        .slide {
+         padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(/img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+
+        }
+        .mySlides {display:block; }
+       
+    </style>
     <script type="text/javascript">
-        new WOW().init();
-        function setHalfVolume() {
-            var myAudio = document.getElementById("Video");
-            myAudio.volume = 0.1;
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = $(".mySlides");
+            for (i = 0; i < x.length; i++) {
+                $(x[i]).css('display', 'block');
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            $(x[myIndex - 1]).css('display', 'none');
+            setTimeout(carousel, 2000); // Change image every 2 seconds
         }
 
+        $('container').click(function () {
+            $('.intro-header').removeClass('mySlides');
+        })
     </script>
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  
+    <script type="text/javascript">
+        new WOW().init();
+        $('container').click(function () {
+            $('.intro-header').removeClass('mySlides');
+        })
+    </script>
+    
+    
 
 </head>
 
 <body>
 
-     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation" style="height:119px">
-        <div class="container topnav" style="margin-top: 1%;">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">
-                    <img src="img/images.png " style="margin-top: -11%;
-    height: 60px;" /> Start a Business Relationship
-                </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+    <div class="row" style="background-color:rgba(211, 211, 211, 0.15);">
+        <div class="col-md-6 col-sm-6">
+
+             <a class="navbar-brand topnav" href="#" style="margin-top:-2%">
+            
+                    <img src="img/images.png " style="height: 45px;" />
+                 
+                    
+                </a><h5 style="margin-top:2.5%">Start a Business Relationship</h5>
+        </div>
+        <div class="col-md-5 col-sm-5">
+            <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#index">Home</a>
                     </li>
                     <li>
                         <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="About.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="Portfolio.html">Portfolio</a>
                     </li>
                     <!--<li>
                         <a href="default.aspx">Blog</a>
                     </li>-->
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
-
-
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="wow zoomInUp intro-header" style="height:" id="wrapper">
+    </div>
+    <a name="index"></a>
+    <!--<div style="height:100px"></div>-->
+    <div class="mySlides slide1 intro-header" id="wrapper">
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1 class="wow bounceInDown">Who Am I ?</h1>
-                        <h3 class="wow bounceInDown">Wanna Know Click Below</h3>
-                        <hr class="wow bounceInDown intro-divider">
-                        <ul class="wow swing list-inline intro-social-buttons">
-                           
+                        <h1 class=" ">Who Am I ?</h1>
+                        <h3 class=" " style="margin-bottom:0% !important">Wanna Know Click Below</h3>
+                        <hr class="  intro-divider">
+                        <ul class=" list-inline intro-social-buttons">
+
                             <li>
-                                <a href="https://github.com/hpmehra" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://github.com/hpmehra" style="padding: 6px;" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                             </li>
                             <li>
-                                <a href="http://in.linkedin.com/in/harpreet-singh-960a60106" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                <a href="http://in.linkedin.com/in/harpreet-singh-960a60106" style="padding: 6px;" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw "></i> <span class="network-name">Linkedin</span></a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="intro-message1">
-                        <a name="services">&nbsp</a>
+                        
                     </div>
 
                 </div>
             </div>
 
         </div>
-        <!-- /.container -->
-
+       
+        <a name="services"></a>
     </div>
-    <!-- /.intro-header -->
-    <!-- Page Content -->
 
-
-    <div class="wow slideInRight content-section-a" style="padding-top: 4%; padding-bottom: 4%; ">
-
+    <div style="display:none" class="mySlides slide intro-header" id="wrapper">
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-5 col-sm-6 wow flip">
-                   
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Development</h2>
-                    <p class="lead">We basically provide an actual scenerio of your thoughts. Your need is our basic entity, which we used to complete your need or requirement with our experience and efforts. We develop software, Web applications as well as windows. </p>
-                </div>
-                <div class="wow bounceInUp col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/Development1.png" alt="" style="margin-top:43% !important">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1 class=" " style="font-size: 5.7em; font-family:initial;">Asp.Net MVC Developer</h1>
+
+                        <hr class="  intro-divider" style="margin-top:4%; width:785px">
+                        <h1 class=" " style="margin-bottom:0% !important; font-size: 3.7em; font-family:initial;">More Than 7 Years Experience</h1>
+                        <!--<h2>Experience</h2>-->
+                    </div>
+
+                    <div class="intro-message1">
+
+                    </div>
+
                 </div>
             </div>
 
         </div>
-        <!-- /.container -->
+
+        <a name="services"></a>
+    </div>
+    
+    <div class="wow slideInRight content-section-a" style="padding-top:6%; padding-bottom: 4%;">
+
+        <div class="container" style="margin-top:3%">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6 wow flip">
+
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Development</h2>
+                    <p class="lead">We basically provide an actual scenerio of your thoughts. Your need is our basic entity, which we use to complete your need or requirement with our experience and efforts. We develop software, Web applications as well as windows. In developement we provide ERP based solutions, Blog Integrations, Payment gateways, CRM Soloutions, Websites and also desktop based softwares.</p>
+                </div>
+                <div class="wow bounceInUp col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/Development1.png" alt="" style="margin-top:58% !important">
+                </div>
+            </div>
+
+        </div>
+
 
     </div>
-    <!-- /.content-section-a -->
-
     <div class="wow slideInLeft content-section-b">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6" style="margin-top:18%">
-                    
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6" style="margin-top:28%">
+
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Designing</h2>
-                    <p class="lead"> We provide best design solutions so  the end user could be impress, just with a glance. Bad designs always make people irriate and this thing we always keep in our mind that this is our goal and we have to impress viewers with our designing skills. </p>
+                    <h2 class="section-heading" style="color: blue; Font-weight: bolder;">Designing</h2>
+                    <p class="lead"> We provide best design solutions so  the end user could be impress, just with a glance. Bad designs always make people irriate and this thing we always keep in our mind that, this is our goal and we have to impress viewers with our designing skills. </p>
                 </div>
                 <div class="wow bounceInDown col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/Designs.png" alt="">
@@ -160,7 +193,7 @@
 
 
         </div>
-        <!-- /.container -->
+
 
     </div>
     <!-- /.content-section-b -->
@@ -169,18 +202,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6 wow flip">
-                   
+
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Server Management</h2>
                     <p class="lead">In the field of development one of the critical task is Server Management. We are not only developer or designer. We are also capable to manage servers. I know very well that how to organize, report, record, analyze a server. A server is just like e heart in the field of development and We know how to make a heart healthy.</p>
                 </div>
                 <div class="wow bounceInRight col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/SManagement.png" alt="" style="margin-top:20%">
+                    <img class="img-responsive" src="img/SManagement.png" alt="" style="margin-top:35%">
                 </div>
             </div>
 
         </div>
-        <!-- /.container -->
 
     </div>
     <div class="wow slideInLeft content-section-b">
@@ -188,11 +220,11 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6" style="margin-top:15%">
-                    
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6" style="margin-top:30%">
+
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Technical Guidence</h2>
-                    <p class="lead"> We are always here to help peoples who are new in the development field. We beleive in sharing knowlege. We always follows one thing "Keep Educating Yourself" and also guide others same. We always gives our best to help others, so that We can help in one's professional development. </p>
+                    <h2 class="section-heading" style="color: blue; Font-weight: bolder;">Technical Guidence</h2>
+                    <p class="lead"> We are always here to help peoples who are new in the development field. We believe in sharing knowlege. We always follows one thing "Keep Educating Yourself" and also guide others same. We always gives our best to help others, so that We can help in one's professional development. </p>
                 </div>
                 <div class="wow bounceIn col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/Guide.png" alt="">
@@ -201,122 +233,65 @@
 
 
         </div>
-        <!-- /.container -->
+
 
     </div>
-    <div class="wow slideInRight content-section-a" style="">
+    <div class="wow slideInRight content-section-a" style="margin-bottom: -2%;">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-lg-6 col-sm-6 wow flip">
-                   
+
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Wanna full stack developer?</h2>
-                    <h4>Then! You are just at a right place</h4>
-                    
+                    <h2 style="color:black" class="section-heading">Wanna full stack developer?</h2>
+                    <h4 style="color:black; text-transform:inherit">Then! You are just at a right place</h4>
 
-                    <br />  <h3>Skill's I have :)</h3>
 
-                </div>
-
-                
-                <div class="wow bounceInDown col-lg-6 col-md-6" style="margin-top: 4%; margin-bottom:2%">
-                    <img src="img/SkillRectangle.png" style="margin-top:15%; width:100%" />
+                    <br />  <h3 style="color:black; text-transform:capitalize">Skill's I have :)</h3>
 
                 </div>
-            </div><a name="contact"></a>
-            <!-- /.container -->
-
-        </div>
-        <!-- /.content-section-a -->
-    </div>
-
-    <div style="height:56px; background-color: rgba(128, 128, 128, 0.06);"></div>
-    <!--<%--<hr style="background-color: rgba(128, 128, 128, 0.06);" />--%>
 
 
+                <div class="wow bounceInDown col-lg-6 col-md-6" style="margin-top: 4%;">
+                    <img src="img/SkillRectangle.png" style="margin-top:50%; width:100%" />
 
-    <%--<a name="contact"></a>--%>-->
-    <div class="banner wow flipInX">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6 wow flash">
-                    <h3>LET'S START A BUSINESS RELATIONSHIP</h3>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <!--<%--
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>--%>-->
-                        <li>
-                            <a href="https://github.com/hpmehra" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="http://in.linkedin.com/in/harpreet-singh-960a60106" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
 
+
         </div>
-        <!-- /.container -->
 
     </div>
-    <!-- /.banner -->
-    <br />
-    <div class="baner" style="background-color: white;  margin-top: -2%;">
 
+    <footer style="background-image:url(img/bg.png)">
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-6 wow shake">
-                    <h3><img src="img/Contact.jpg" /></h3>
-                </div>
-               <embed src="SongForSite.mp3" onloadeddata="setHalfVolume()" width="0" height="0" autostart="true" loop="false">
-                <div class="col-lg-6 wow rollIn" style="margin-top:2%">
-                    <ul class="banner-social-buttons" style="list-style:none; margin-top: 32px;">
-                        <li>
-                            <!--<%--<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>--%>-->
-                            <i class="fa fa-phone fa-2x"></i> &nbsp;&nbsp;  <a style="text-decoration: none;"> 91+ &nbsp; 9041966179, &nbsp;91+ &nbsp; 9069158069</a>
-                        </li>
-                        <br />
-                        <li>
-                            <!--<%-- <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>--%>-->
-                            <i class="fa fa-envelope fa-2x"></i>&nbsp;&nbsp; hpsmehra@gmail.com
+                <div class="col-md-9 col-sm-6">
+                    <input type="button" value="Hire me on Upwork" onclick="window.location.href = 'http://www.upwork.com/o/profiles/users/_~01c950061100c24580';" style="background-color: #63BB0C; height: 40px; color: white; border: green; margin-top:2%" />
+                    <input type="button" value="Hire me on Freelance" onclick="window.location.href = 'https://www.freelancer.com/u/hpsmehra.html';" style=" background-color: blue; height: 40px; color: white; border: Blue; margin-top:2%" /><br />
+                    <input type="button" value="Hire me on Peopleperhour" onclick="window.location.href = 'http://www.peopleperhour.com/freelancer/harpreet/sr-software-engineer/1088092'" style="background-color: orange; height: 40px; color: white; border: orange; margin-top: 2%; padding-right: 6.5%; padding-left: 7%; " />
+                </div><br />
+                <div class="col-md-3 col-sm-6">
+                    <div style="color:white">
+                        <h4 style="color: rgb(75, 195, 74);margin-bottom: 5%; text-transform: capitalize; ">Keep in touch with me</h4>
+                        <p><i class="fa fa-home fa-2x"></i> &nbsp; Sector 62, NCR Region! Noida, India</p>
+                        <p><i class="fa fa-globe fa-2x"></i>&nbsp; hpsmehra@gmail.com</p>
+                        <p><i class="fa fa-phone fa-2x"></i>&nbsp; +91-9041966179, &nbsp; +91-9069158069 </p>
+                        <p><i class="fa fa-skype fa-2x"></i>&nbsp; hpmehra </p>
 
-                        </li>
-                        <br />
-                        <li>
-                            <a style="text-decoration: none;">
-                                <i class="fa fa-skype fa-2x"></i> &nbsp;&nbsp; hpmehra
-                            </a>
-                            <!--<%--<a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>--%>-->
-                        </li>
-                    </ul>
+                    </div><br />
                 </div>
+
+
+
             </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-12" style="text-align: center;">
-                    <ul class="list-inline">
+                <div class="col-md-12" style="text-align: center; margin-bottom: -4%;">
+                    <ul class="list-inline" style="margin-left: 18px;">
+                        
                         <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
+                            <a href="#index">Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
@@ -324,10 +299,13 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="About.html">About Us</a>
                         </li>
 
                         <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="Portfolio.html">Portfolio</a>
+                        </li>
                         <!--<li>
                             <a href="default.aspx">Blog</a>
                         </li>-->
@@ -339,10 +317,7 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

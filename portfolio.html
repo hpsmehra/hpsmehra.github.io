@@ -1,0 +1,1033 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/theme.css" rel="stylesheet" />
+    
+    <script src="js/backtotop.js"></script>
+
+    <link href="css/Applied.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            //$('.all').addClass('active');
+            
+            $('.all').css('background', '#ccc');
+            
+            $('.other').click(function () {
+                $('.all').removeClass('active');
+                $('.all').css('background', '');
+
+            })
+            
+            $('#allapp').click(function () { $('.allapp').show(); $('.numbers').show(); $('#1').trigger('click') });
+            $('#website').click(function () { $('.allapp').hide(); $('.website').show(); $('.numbers').hide(); $('#W1').text('Project #1'); $('#W2').text('Project #2'); $('#W3').text('Project #3'); $('#W4').text('Project #4'); });
+            $('#software').click(function () { $('.allapp').hide(); $('.software').show(); $('.numbers').hide(); $('#S1').text('Project #4'); $('#S2').text('Project #5'); $('#S3').text('Project #6'); $('#S4').text('Project #7'); $('#S5').text('Project #8'); $('#S6').text('Project #9'); });
+            $('#latest').click(function () { $('.allapp').hide(); $('.latest').show(); $('.numbers').hide(); });
+            $('#others').click(function () { $('.allapp').hide(); $('.others').show(); $('.numbers').hide(); $('#O1').text('Project #1'); $('#O2').text('Project #2'); $('#O3').text('Project #3'); });
+            $('#1').click(function () { $('.allapp').hide(); $('.count1').show();  });
+            $('#2').click(function () { $('.allapp').hide(); $('.count2').show() });
+            $('#3').click(function () { $('.allapp').hide(); $('.count3').show() });
+            $('#4').click(function () { $('.allapp').hide(); $('.count4').show() });
+            $(function () { $('#1').trigger('click') });
+        });
+    </script>
+    <style>
+        .desc {
+            text-align: justify;
+    font-family: initial;}
+    </style>
+   
+</head>
+<body>
+    <form>
+        <div class="row" style="background-color:rgba(211, 211, 211, 0.15);">
+            <div class="col-md-6 col-sm-6">
+                <a class="navbar-brand topnav" href="#" style="margin-top:-2%">
+                    <img src="img/images.png" style="height: 45px;" />
+
+
+                </a><h5 style="margin-top:2.5%">Start a Business Relationship</h5>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="About.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="Portfolio.html">Portfolio</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div style="height:60px"></div>
+        <div class="clearfix" style="margin-left: 8%;">
+            
+            <ul class="project-feed-filter">
+                <li><a id="allapp" href="#all" class="btn btn-sm btn-default all ">All</a></li>
+                <li><a id="latest" href="#latest" class="btn btn-sm btn-default other">Latest</a></li>
+                <li><a id="website" href="#website" class="btn btn-sm btn-default other">Website</a></li>
+                <li><a id="software" href="#software" class="btn btn-sm btn-default other">Software</a></li>
+                <li><a id="others" href="#others" class="btn btn-sm btn-default other">Others</a></li>
+            </ul>
+           
+        </div>
+        <div class="container" style="height:initial; margin-top:5%">
+
+            
+            <div class="row software count1 latest allapp">
+                <h2 style="margin-left:1.4%; color: cornflowerblue;">Latest Project</h2><br />
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/banner-bg.jpg" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project1" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a href="#">Project #1</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Viper Golf Tournament</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row count1 software allapp">
+                <h2 style="margin-left:1.4%; color: cornflowerblue;">Previous Project</h2><br />
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/just Energy.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project2" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a href="#">Project #2</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Just Energy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Med Spectra Managed Care.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project3" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a href="#">Project #3</a></h4>
+                            <span style="text-align:center; color:grey;">Title: MedSpectra Managed Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row count1 website allapp">
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Hcrg_home.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project4" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="W1" href="#">Project #4</a></h4>
+                            <span style="text-align:center; color:grey;">Title: HCRG University</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Walnut_Home_1.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project5" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="W2" href="#">Project #5</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Gurudwara Sahib Walnut</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row count2 software allapp">
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Lien.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project6" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="S1" href="#">Project #6</a></h4>
+                            <span style="text-align:center; color:grey;">Title: HCRG Lien Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/AIOCM.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project7" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="S2" href="#">Project #7</a></h4>
+                            <span style="text-align:center; color:grey;">Title: American Institute of Outcomes Healthcare Management</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row count2 website allapp">
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Scratcharge.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project8" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="W3" href="#">Project #8</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Scratcharge</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Inovate.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project9" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="W4" href="#">Project #9</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Innovate</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row count3 software allapp">
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/AR Management.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project10" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="S3" href="#">Project #10</a></h4>
+                            <span style="text-align:center; color:grey;">Title: AR Managment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/MedSpectra.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project11" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="S4" href="#">Project #11</a></h4>
+                            <span style="text-align:center; color:grey;">Title: MedSpectra Utilization Review</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row count3 software allapp">
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Bill_review.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project12" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="S5" href="#">Project #12</a></h4>
+                            <span style="text-align:center; color:grey;">Title: MedSpectra-Bill Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/WCF.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project13" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="S6" href="#">Project #13</a></h4>
+                            <span style="text-align:center; color:grey;">Title: MSHM AutoComplete WCF</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row count4 others allapp">
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/MSBR.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project14" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="O1" href="#">Project #14</a></h4>
+                            <span style="text-align:center; color:grey;">Title: MSBR Desktop Application</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/intro-bg.jpg" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project15" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="O2" href="#">Project #15</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Prime Health PPO (Console Application)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row count4 others allapp">
+                <div class=" col-md-6 col-sm-6 project-item">
+                    <div class="">
+                        <figure class="alignnone project-img">
+                            <img src="img/Google Extension.png" alt="">
+                            <div class="overlay">
+
+                                <a data-toggle="modal" data-target="#project16" href="" class="popup-link zoom"><i class="fa fa-link"><h5 style="color:white">Description</h5></i></a>
+                            </div>
+                        </figure>
+                        <div class="project-desc">
+                            <h4 class="title"><a id="O3" href="#">Project #16</a></h4>
+                            <span style="text-align:center; color:grey;">Title: Google Extension</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div class="row numbers" >
+                <div style="float:right; margin-bottom:3%" class="col-md-7 col-sm-12">
+                    <ul class="project-feed-filter">
+                        <li><a id="1" href="#" class="btn btn-sm btn-info">1</a></li>
+                        <li><a id="2" href="#" class="btn btn-sm btn-info">2</a></li>
+                        <li><a id="3" href="#" class="btn btn-sm btn-info">3</a></li>
+                        <li><a id="4" href="#" class="btn btn-sm btn-info">4</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer style="background-image:url(img/bg.png)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-6">
+                        <input type="button" value="Hire me on Upwork" onclick="window.location.href = 'http://www.upwork.com/o/profiles/users/_~01c950061100c24580';" style="background-color: #63BB0C; height: 40px; color: white; border: green; margin-top:2%" />
+                        <input type="button" value="Hire me on Freelance" onclick="window.location.href = 'https://www.freelancer.com/u/hpsmehra.html';" style=" background-color: blue; height: 40px; color: white; border: Blue; margin-top:2%" /><br />
+                        <input type="button" value="Hire me on Peopleperhour" onclick="window.location.href = 'http://www.peopleperhour.com/freelancer/harpreet/sr-software-engineer/1088092'" style="background-color: orange; height: 40px; color: white; border: orange; margin-top: 2%; padding-right: 6.5%; padding-left: 7%; " />
+                    </div><br />
+                    <div class="col-md-3 col-sm-6">
+                        <div style="color:white">
+                            <h4 style="color:rgb(75, 195, 74); text-transform: capitalize; margin-bottom:5% ">Keep in touch with me</h4>
+                            <p><i class="fa fa-home fa-2x"></i> &nbsp; Sector 62, NCR Region! Noida, India</p>
+                            <p><i class="fa fa-globe fa-2x"></i>&nbsp; hpsmehra@gmail.com</p>
+                            <p><i class="fa fa-phone fa-2x"></i>&nbsp; +91-9041966179, &nbsp; +91-9069158069 </p>
+                            <p><i class="fa fa-skype fa-2x"></i>&nbsp; hpmehra </p>
+
+                        </div><br />
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center; margin-bottom: -4%;">
+                        <ul class="list-inline" style="margin-left: 9px;">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="About.html">About Us</a>
+                            </li>
+
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="Portfolio.html">Portfolio</a>
+                            </li>
+                        </ul>
+                        <p class="copyright text-muted small">Copyright &copy; hpsmehra 2016. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="container allmodals">
+            <div class="modal fade" id="project1" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Viper Golf Tournament (www.visionperfect.com)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">Net Framework 4.5</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">MVC</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web API</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2012</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Angular Js</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SPA</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/Hcrg_home.png"><img style="max-width: 25%;" src="img/viper.png" /> </a>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">ViPer Tournament Manager provides the most complete and comprehensive golf tournament management software package for your course or tournament operations whether you're managing group tournament outings or just want to enhance your day-to-day presentation. And NOW, ViPer is avaliable in the Cloud - with nothing to install.  ViPer Tournament Manager, ViPer Leaderboard, ViPer Smart Phone APP and ViPer Web Manager are combined into a single cloud-based solution called ViPer MaX.  You can log in to the applications from any location on any device and experience the power of ViPer anywhere - anytime.  All of the functionality of ViPer Desktop are now available in the cloud. </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project2" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Just Energy (www.justenergy.com)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">HTML5</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Jquery</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Bootstrap</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">MVC6</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 6.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/just Energy.png"><img style="max-width: 25%;" src="img/just Energy.png" /> </a> &nbsp;<a href="img/JE1.png"><img style="max-width: 25%;" src="img/JE1.png" /> </a> &nbsp;<a href="img/JE2.png"><img style="max-width: 25%;" src="img/JE2.png" /> </a> &nbsp;<a href="img/JE3.png"><img style="max-width: 25%;" src="img/JE3.png" /> </a> &nbsp;
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">Just Energy is committed to offering green energy options to residential and commercial customers alike. Support the environment by adding a JustGreen package to your natural gas or electric supply. Serves more than 1.8 million customers across North America. In more than 17 years, Just Energy has established itself as one of the top natural gas and electricity providers in the U.S. and Canada.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project3" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">MedSpectra Managed Care</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Asp.net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2008</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Javascript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">WCF</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Sql Job</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SSIS Package</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Linq</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div>
+                                    <p style="color:red">As Its a in-house software used by United Healthcare, So cannot reaveal thumbnails of this one project</p>
+                                </div>
+
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">This project able to maintain all the processes Healthcare Management Group to advancing technology and high quality clinical expertise to provide effective outcomes to improve bottom line results of the group.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project4" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">HCRG University</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">Net Framework 6.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">MVC5</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2008</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Javascript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">WCF</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Repository Pattern</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">KnockOut.Js</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Unity</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/Hcrg_home.png"><img style="max-width: 25%;" src="img/Hcrg_home.png" /> </a>&nbsp; <a href="img/Hcrg_About.png"><img style="max-width: 25%;" src="img/Hcrg_About.png" /> </a> &nbsp;<a href="img/Hcrg_College.png"><img style="max-width: 25%;" src="img/Hcrg_College.png" /> </a>&nbsp;<a href="img/Hcrg_LogIn.png"><img style="max-width: 25%;" src="img/Hcrg_LogIn.png" /> </a> </a>&nbsp;<a href="img/Hcrg_Schedule.png"><img style="max-width: 25%;" src="img/Hcrg_Schedule.png" /> </a>
+                                </div>
+
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">Provides online medical field related courses. Helps people to provide information regarding medical treatments.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project5" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Walnut Gurudwara (http://www.gurdwarawalnut.org/)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">HTML5</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Jquery</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Javascript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Bootstrap</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">.net framework 4.5</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Forms</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/Walnut.png"><img style="max-width: 25%;" src="img/Walnut.png" /> </a>&nbsp;
+                                    <a href="img/Walnut_1.png"><img style="max-width: 25%;" src="img/Walnut_1.png" /> </a>&nbsp;
+                                    <a href="img/Walnut_2.png"><img style="max-width: 25%;" src="img/Walnut_2.png" /> </a>&nbsp;
+                                    <a href="img/Walnut_Home.png"><img style="max-width: 25%;" src="img/Walnut_Home.png" /> </a>&nbsp;
+                                    <a href="img/Walnut_Home_1.png"><img style="max-width: 25%;" src="img/Walnut_Home_1.png" /> </a>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc"> This website is based on Gurdwara Sahib Walnut, also known as Shri Guru Singh Sabha, was originally established in Alhambra. The Gurdwara Sahib was moved to walnut in 2008. The constitution and guiding principles of the Gurdwara Sahib are aligned with the Akal Takht, with a strong commitment to developing the youth into Sikhi and the future. The Gurdwara Sahib is registered as a non-profit religious corporation in California.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project6" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">HCRG Lien Management</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.net Framework 2.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Asp.Net 2.0 </a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Services</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Java Script</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Sql Server 2005</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div>
+                                    <p style="color:red">As its a in-house software. So We can't reveal thumbnails of this one project.</p>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc"> Lien resolution is program for the workers’ compensation industry based on a medical necessity model. In lien resolution, the dispute is usually related to payment for a medical service that has been delivered. Our model is designed to go beyond the legal aspects and to include the medical reasonableness discussion to achieve best in class settlement. Lien is software which helps the Claimant (USA Citizen) to get their claim from the provider of insurance. Lien software processes the report with in TAT and negotiates the amount between claimant and provider.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project7" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">AIOCM (www.aiocm.com)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.net Framework 2.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Asp.Net 2.0 </a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Services</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Java Script</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Sql Server</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/AIOCM.png"><img style="max-width: 25%;" src="img/AIOCM.png" /> </a>&nbsp; <a href="img/AIOCM.png"><img style="max-width: 25%;" src="img/AIOCM1.png" /> </a>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc"> AIOCM has been developed two processess for certification. There are Standard process and Portfolio Review Process.</p>
+                                <p class="desc" style="margin-top:2%">The Standard Certification Process: It involves the applicant meeting the general education , professional experience, education in the specific area, ethical requirements by the AIOCM</p>
+                                <p class="desc" style="margin-top:2%">The Portfolio Revie Process: AIOCM is supportive of alternative ways to qualify professionals to meet the certification requirements. This is achieved through this portfolio process.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project8" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Scratcharge</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">ASP.Net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Forms</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2008</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">LINQ</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">API</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Javascript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Jquery</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/Scratcharge.png"><img style="max-width: 25%;" src="img/Scratcharge.png" /> </a>&nbsp;   <a href="img/Mobile_rechar.png"><img style="max-width: 25%;" src="img/Mobile_rechar.png" /> </a>&nbsp; <a href="img/Scratcharge_Adv.png"><img style="max-width: 25%;" src="img/Scratcharge_Adv.png" /> </a> &nbsp;<a href="img/Scratcharge_recharge.png"><img style="max-width: 25%;" src="img/Scratcharge_recharge.png" /> </a>&nbsp;<a href="img/Scratcharge_users.png"><img style="max-width: 25%;" src="img/Scratcharge_users.png" /> </a>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">This is recharge site. There are two panels as admin and user panel. Coupons available for recharge. Without coupon user cannot recharge as payment gateway was not used in this. Wallet option is also available. Live domain of this site is as scratcharge.com, I made replica of this site. Latest has not uploaded yet.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project9" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Innovate (www.innovatehmg.co.uk)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">HTML</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Jquery</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Bootstrap</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Asp.net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Ajax</a></li>
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/inovate1.png" <img style="max-width:25%;" src="img/inovate1.png" /> </a> &nbsp;<a href="img/inovate2.png"><img style="max-width: 25%;" src="img/inovate2.png" /> </a> &nbsp;<a href="img/inovate3.png"><img style="max-width: 25%;" src="img/inovate3.png" /> </a> &nbsp;<a href="img/inovate4.png"><img style="max-width: 25%;" src="img/inovate4.png" /> </a> 
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">Its mission is to continuously focus on the needs of our customers in an ever changing and challenging healthcare industry. Offer innovative solutions in service provision using advancing technology and high quality clinical expertise to provide effective outcomes to improve bottom line results.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project10" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">AR Management</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">MVC4</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Jquery</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Bootstrap</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Asp.net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Services</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Code First Approach</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Knockout Js</a></li>
+                               </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div class="imgborder">
+                                    <a href="img/AR1.png" ><img style="max-width:25%;" src="img/AR1.png" /> </a> &nbsp;<a href="img/AR Management.png"><img style="max-width: 25%;" src="img/AR Management.png" /> </a>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project11" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">MedSpectra Utilization Review</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">ASP.Net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Services</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">JavaScript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2005</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">AJAX</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">LINQ</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">JQuery</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SSIS Package</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Job</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">WCF</a></li>
+
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div>
+                                    <p style="color:red">As its a in-house project used by united health care, so I can't reveal software thumbnails.</p>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">MSUR It is an outcomes-based care management model. The model evaluates treatment requests for medical necessity and appropriateness and makes diagnosis-relevant decisions designed to expedite care, prevent delays, obtain clinical outcomes, and be cost-effective. The program is specifically designed to act as the medical arm of claims management.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project12" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">MedSpectra-Bill Review</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 2.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">ASP.Net 2.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Services</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">CSS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">JavaScript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2005</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">AJAX</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">WCF</a></li>
+
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div>
+                                    <p style="color:red">As its an another in-house project used by united health care, so I can't reveal software thumbnails.</p>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">MedSpectra-Bill Review to conduct bill review. MedSpectra-Bill Review is an advanced, internet-based application. It utilizes sophisticated system logic and artificial intelligence to re-price bills down to state mandated fee schedules and for applying extensive state-specific rule validation. Some of the critical features of the software include:- 1) Specific State Rule Application and Validation. 2) Duplicate Check. 3) Client Configurable Rules. 4) Integrated Utilization Review Management / MPN Check. 5) State Specific Explanation of Review (EOR) etc.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project13" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">MSHM AutoComplete WCF</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">ASP.Net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2005</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Linq(dbml file)</a></li>
+                                    </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Thumbnails</p>
+                                <div>
+                                    <p style="color:red">Its a WCF Service.</p>
+                                </div>
+
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">This WCF service is used for AutoComplete in MSHM project. Ajax AutoCompleteExtender fetches data from database through this WCF..</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project14" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">MSBR Desktop Application (Window Application)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 2.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">ASP.Net 2.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2005</a></li>
+                                    
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">This application is developed for Data entry for MSBR project. With this application user can enter data in MSBR web application with more speed. After enter data in this app user can post it to MSBR. </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project15" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Prime Health PPO (Console Application)</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">.Net Framework 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">ASP.Net 4.0</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">C#</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">SQL Server 2005</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">WCF</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">LINQ</a></li>
+
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">This is console application that uses a WCF to data automation. This service is used in MSBR project to calculate allowance of bill.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="project16" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #f0fff3;">
+                        <div class="modal-header" style="background-color: #717668;">
+                            <button style="color:white" type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="color:white">Scrap Data</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="">
+                                <p style="font-weight: bolder;">Enviornment</p>
+                                <ul class="project-feed-filter">
+                                    <li><a href="#" class="btn btn-sm btn-info">Google Extension</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Web Services</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">HTML</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">IIS</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Phantom Js</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Javascript</a></li>
+                                    <li><a href="#" class="btn btn-sm btn-info">Jquery</a></li>
+
+                                </ul>
+                                <br />
+                                <p style="font-weight: bolder;">Description:</p>
+                                <p class="desc">This google extension has been created to scrap screen shorts of current active tab, Dom elements and to scrap keystrokes in active tab and store them in text file through a webservices hosted on IIS. Scrapping has been start after onclick start scrap button.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
