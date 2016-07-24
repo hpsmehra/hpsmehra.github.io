@@ -14,6 +14,7 @@
     <script src="js/backtotop.js"></script>
 
     <link href="css/Applied.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         $(document).ready(function () {
             //$('.all').addClass('active');
@@ -26,11 +27,11 @@
 
             })
             
-            $('#allapp').click(function () { $("#customHeight").addClass('customHeight'); $('.allapp').show(); $('.numbers').show(); $('#1').trigger('click'); $('#W1').text('Project #4'); $('#W2').text('Project #5'); $('#S1').text('Project #6'); $('#S2').text('Project #7'); $('#W3').text('Project #8'); $('#W4').text('Project #9'); $('#S3').text('Project #10'); $('#S4').text('Project #11'); $('#S5').text('Project #12'); $('#S6').text('Project #13'); $('#O1').text('Project #14'); $('#O2').text('Project #15'); $('#O3').text('Project #16'); });
-            $('#website').click(function () { $("#customHeight").addClass('customHeight'); $('.allapp').hide(); $('.website').show(); $('.numbers').hide(); $('#W1').text('Project #1'); $('#W2').text('Project #2'); $('#W3').text('Project #3'); $('#W4').text('Project #4'); });
-            $('#software').click(function () { $("#customHeight").removeClass('customHeight'); $('.allapp').hide(); $('.software').show(); $('.numbers').hide(); $('#S1').text('Project #4'); $('#S2').text('Project #5'); $('#S3').text('Project #6'); $('#S4').text('Project #7'); $('#S5').text('Project #8'); $('#S6').text('Project #9'); });
-            $('#latest').click(function () { $("#customHeight").addClass('customHeight'); $('.allapp').hide(); $('.latest').show(); $('.numbers').hide(); });
-            $('#others').click(function () { $("#customHeight").addClass('customHeight'); $('.allapp').hide(); $('.others').show(); $('.numbers').hide(); $('#O1').text('Project #1'); $('#O2').text('Project #2'); $('#O3').text('Project #3'); });
+            $('#allapp').click(function () { $('.allapp').show(); $('.numbers').show(); $('#1').trigger('click'); $('#W1').text('Project #4'); $('#W2').text('Project #5'); $('#S1').text('Project #6'); $('#S2').text('Project #7'); $('#W3').text('Project #8'); $('#W4').text('Project #9'); $('#S3').text('Project #10'); $('#S4').text('Project #11'); $('#S5').text('Project #12'); $('#S6').text('Project #13'); $('#O1').text('Project #14'); $('#O2').text('Project #15'); $('#O3').text('Project #16'); });
+            $('#website').click(function () { $('.allapp').hide(); $('.website').show(); $('.numbers').hide(); $('#W1').text('Project #1'); $('#W2').text('Project #2'); $('#W3').text('Project #3'); $('#W4').text('Project #4'); });
+            $('#software').click(function () { $('.allapp').hide(); $('.software').show(); $('.numbers').hide(); $('#S1').text('Project #4'); $('#S2').text('Project #5'); $('#S3').text('Project #6'); $('#S4').text('Project #7'); $('#S5').text('Project #8'); $('#S6').text('Project #9'); });
+            $('#latest').click(function () { $('.allapp').hide(); $('.latest').show(); $('.numbers').hide(); });
+            $('#others').click(function () { $('.allapp').hide(); $('.others').show(); $('.numbers').hide(); $('#O1').text('Project #1'); $('#O2').text('Project #2'); $('#O3').text('Project #3'); });
             $('#1').click(function () { $('.allapp').hide(); $('.count1').show();  });
             $('#2').click(function () { $('.allapp').hide(); $('.count2').show() });
             $('#3').click(function () { $('.allapp').hide(); $('.count3').show() });
@@ -42,15 +43,13 @@
         .desc {
             text-align: justify;
     font-family: initial;}
-        .customHeight{
-            height:1316px;
-        }
+    
     </style>
    
 </head>
 <body>
     <form>
-        <div id="customHeight">
+        <div>
             <div class="row" style="background-color:rgba(211, 211, 211, 0.15);">
                 <div class="col-md-6 col-sm-6">
                     <a class="navbar-brand topnav" href="#" style="margin-top:-2%">
@@ -371,8 +370,8 @@
 
 
                 </div>
-                <div class="row numbers">
-                    <div style="float:right; margin-bottom:3%" class="col-md-7 col-sm-12">
+                <div class="row numbers" style="text-align:center;">
+                    <div style=" margin-bottom:3%" class="col-sm-12">
                         <ul class="project-feed-filter">
                             <li><a id="1" href="#" class="btn btn-sm btn-info">1</a></li>
                             <li><a id="2" href="#" class="btn btn-sm btn-info">2</a></li>
